@@ -48,7 +48,6 @@ export const getMovieDetails = (id) => {
     const res = await axios.get(
       `${MOVIE_URL}/${id}?api_key=${API_KEY}&language=ar`
     );
-    console.log(res);
     dispatch({ type: MOVIE_DETAILS, details: res.data });
   };
 };

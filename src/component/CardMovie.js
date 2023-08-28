@@ -5,10 +5,11 @@ import Zoom from "react-reveal/Zoom";
 
 const CardMovie = ({ mov }) => {
   const imgUrl = "http://image.tmdb.org/t/p/w500/";
+  const id = btoa(mov.id);
   return (
     <Col xs="6" md="4" lg="2" className="my-2">
       <Zoom>
-        <Link to={`/movie/${mov.id}`}>
+        <Link to={`/movie/${id}`}>
           <div className="card-movie">
             <div className="img">
               <img

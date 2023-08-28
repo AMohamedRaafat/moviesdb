@@ -11,7 +11,7 @@ const CardView = () => {
   const { details } = useSelector((state) => state);
 
   useEffect(() => {
-    dispatch(getMovieDetails(id));
+    dispatch(getMovieDetails(atob(id)));
   }, []);
   console.log(details);
 

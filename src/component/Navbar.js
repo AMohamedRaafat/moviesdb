@@ -19,7 +19,7 @@ const Navbar = () => {
       <Container>
         <Row className="w-100 justify-content-center align-items-center">
           <Col sm="2">
-            <Link to="/">
+            <Link to="/moviesdb/">
               <img src={logo} className="img-logo" alt="" />
             </Link>
           </Col>

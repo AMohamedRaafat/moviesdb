@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import { Navbar, MoviesList, CardView } from "./component/";
@@ -23,13 +23,10 @@ and {movie_id} for details of movie api is required
 
 function App() {
   const dispatch = useDispatch();
-  const state = useSelector((state) => state);
-
   useEffect(() => {
     dispatch(getAllMovies());
   }, []);
 
-  console.log(state);
   return (
     <BrowserRouter>
       <Navbar />

@@ -13,7 +13,6 @@ const CardView = () => {
   useEffect(() => {
     dispatch(getMovieDetails(atob(id)));
   }, []);
-  console.log(details);
 
   return details ? (
     <Slide right>

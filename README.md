@@ -3,7 +3,7 @@
 ## Get All Movies from API 
 
 ### You will get all Movies in Homepage 
-### Search for movie you need by name , 
+### Search for movie you need by name 
 ### Click it to see more details about this movie 
 
 

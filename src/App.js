@@ -35,7 +35,7 @@ function App() {
       <Navbar />
       <Container className="py-5">
         <Routes>
-          <Route path="/" element={<MoviesList />} />
+          <Route path="/moviesdb" element={<MoviesList />} />
           <Route path="/movie/:id" element={<CardView />} />
         </Routes>
       </Container>
